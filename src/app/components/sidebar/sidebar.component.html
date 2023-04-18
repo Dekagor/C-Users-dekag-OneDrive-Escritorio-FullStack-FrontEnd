@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 side-nav-content">
+      <div class="imgside"><img src="../../../assets/Img/Denis.jpg" alt="Denis Karina Gomez Ramirez" title="Denis Karina Gomez Ramirez"></div>
+      <ul class="nav-list" [ngClass]="{'nav-list-open': sidebarStatus}">
+        <li class="nav-list-item" *ngFor="let item of list">
+            <i class="{{item.icon}}"></i>
+                <span>
+                    <a [routerLink]="item.url" class="menu" style="cursor:pointer,">{{item.name}}</a>
+                </span>
+        </li>
+      </ul>
+    </div>
+</div>
+

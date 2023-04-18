@@ -1,0 +1,40 @@
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.img-fluid {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 0;
+    box-shadow: 10px 10px 30px black;
+
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .row {
+        justify-content: center;
+    }
+
+    .container {
+        padding-top: 30px;
+    }
+
+    .move {
+        margin-left: 40px;
+    }
+}

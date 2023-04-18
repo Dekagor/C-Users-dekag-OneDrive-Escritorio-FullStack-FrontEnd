@@ -1,0 +1,44 @@
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.img-fluid {
+    margin-top: 125px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.img-fluid img {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 30px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .row {
+        justify-content: center;
+    }
+
+    .container {
+        padding-top: 30px;
+    }
+
+    .move {
+        margin-left: 40px;
+    }
+}

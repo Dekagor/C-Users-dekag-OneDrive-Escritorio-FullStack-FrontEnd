@@ -1,0 +1,132 @@
+.container-fluid {
+    height:100%;
+    overflow-x: hidden;
+
+}
+
+
+button {
+    display: flex;
+    filter: invert(95%);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+.navbar-brand{
+    display: flex;
+    font-size:16px;
+    margin-left: 50px;
+
+}  
+
+.navbar-nav {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 1140px;
+    
+    
+}
+
+.btn-group {
+    padding-top: 4px;
+    filter: invert(100%);
+}
+
+.btn-group {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.side-nav-button {
+    margin: 0! important;
+}
+
+/* Extra large devices (1209px) */
+@media (max-width: 1209px) { 
+    .navbar-nav {
+        margin-left: 700px;
+    }
+}
+
+/* Large devices (992px) */
+@media (max-width: 992px) { 
+
+    .navbar {
+        width: 100vw;
+        
+        
+    }
+    
+    .navbar-nav {
+        margin-left: 65vw;
+    }
+ }
+
+ /* Medium devices (768px) */
+@media (max-width: 768px) { 
+    .navbar-nav {
+        margin-left: 55vw;
+    }
+ }
+
+
+ @media (max-width: 582px) {
+
+    .container-fluid {
+        overflow-x: hidden;
+        margin: 0! important;
+        padding-right: 0! important;
+    }
+    
+    .navbar-nav {
+        margin-left: 45vw;
+    }
+
+    .side-nav-button {
+        display: flex;
+        font-size: 12px;
+        margin: 0! important;
+        padding-right: 0! important;
+        overflow-x: hidden;
+    }
+ }
+
+/* 
+Small devices (480px) */
+@media (max-width: 480px) {
+
+    .container-fluid {
+        overflow-x: hidden;
+        margin: 0! important;
+        padding-right: 0! important;
+    }
+
+    .navbar-nav {
+        margin-left: 45vw;
+        overflow-x: hidden;
+    }
+    
+    .navbar-brand {
+        margin-left: 25px;
+        overflow-x: hidden;
+    }
+
+    .side-nav-button {
+        display: flex;
+        font-size: 12px;
+        margin: 0! important;
+        padding-right: 0! important;
+        overflow-x: hidden;
+ }
+}
+
+
+
+
+

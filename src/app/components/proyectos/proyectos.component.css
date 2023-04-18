@@ -1,0 +1,66 @@
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+.img-fluid {
+    margin-top: 55px;
+    margin-left: 0;
+}
+
+.carousel-caption {
+    background-color: black;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+h5, p {
+    color: antiquewhite;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.img-fluid {
+    box-shadow: 10px 10px 30px black;
+}
+
+
+@media (max-width: 768px) {
+
+    .row {
+        justify-content: center;
+    }
+
+    .container {
+        padding-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 590px) {
+
+    .row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .row {
+        justify-content: center;
+    }
+
+    .container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .move {
+        margin-left: 40px;
+    }
+}
