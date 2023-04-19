@@ -12,7 +12,6 @@ import { SkillComponent } from './components/skill/skill.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -30,7 +29,6 @@ import { HomeComponent } from './components/home/home.component';
     ProyectosComponent,
     HeaderComponent,
     LoginComponent,
-    RegisterComponent,
     FooterComponent,
     HomeComponent
   ],

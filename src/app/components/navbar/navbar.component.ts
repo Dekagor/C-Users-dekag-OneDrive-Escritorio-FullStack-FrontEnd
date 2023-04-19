@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ export class NavbarComponent implements OnInit {
   @Output() sidebarToggled = new EventEmitter<boolean>();
   menuStatus: boolean = false;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -19,4 +20,7 @@ export class NavbarComponent implements OnInit {
     this.sidebarToggled.emit(this.menuStatus);
   }
 
+  login() {
+    this.router.navigate(['/login']);
+  }
 }

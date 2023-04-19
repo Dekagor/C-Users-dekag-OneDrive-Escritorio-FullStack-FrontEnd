@@ -1,20 +1,35 @@
 .container-fluid {
-    height:100%;
+    height:80px;
     overflow-x: hidden;
-
+    padding: 0! important;
+    margin-right: 0! important;
+    margin-left: 0! important;
+    line-height: 0! important;
 }
 
-
+.navbar navbar-expand-md.container.row {
+    overflow-x: hidden;
+    padding: 0! important;
+    margin-right: 0! important;
+    margin-left: 0! important;
+    line-height: 0! important;
+}
 button {
     display: flex;
     filter: invert(95%);
     font-size: 16px;
     cursor: pointer;
+    overflow-x: hidden;
+    padding: 0! important;
+    margin-right: 0! important;
+    margin-left: 0! important;
+    line-height: 0! important;
 }
 
 button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    overflow-x: hidden;
 }
 
 
@@ -22,6 +37,7 @@ button:hover {
     display: flex;
     font-size:16px;
     margin-left: 50px;
+    overflow-x: hidden;
 
 }  
 
@@ -29,23 +45,29 @@ button:hover {
     display: flex;
     margin-top: 10px;
     margin-left: 1140px;
-    
-    
+    overflow-x: hidden;
 }
 
 .btn-group {
     padding-top: 4px;
     filter: invert(100%);
+    overflow-x: hidden;
 }
 
 .btn-group {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    overflow-x: hidden;
 }
 
-.side-nav-button {
+/* .side-nav-button {
     margin: 0! important;
-}
+    overflow-x: hidden;
+    padding: 0! important;
+    margin-right: 0! important;
+    margin-left: 0! important;
+    line-height: 0! important;
+} */
 
 /* Extra large devices (1209px) */
 @media (max-width: 1209px) { 
@@ -121,7 +143,7 @@ Small devices (480px) */
         display: flex;
         font-size: 12px;
         margin: 0! important;
-        padding-right: 0! important;
+        padding: 0! important;
         overflow-x: hidden;
  }
 }
