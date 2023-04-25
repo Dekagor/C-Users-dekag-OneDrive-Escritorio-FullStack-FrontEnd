@@ -16,6 +16,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
+import { interceptorProvider } from './service/interceptor-service';
+import { ExperienciaEditableComponent } from './components/experiencia/experiencia-editable/experiencia-editable.component';
+import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia/editar-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -30,15 +35,22 @@ import { HomeComponent } from './components/home/home.component';
     HeaderComponent,
     LoginComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    LoginButtonComponent,
+    ExperienciaEditableComponent,
+    EditarExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

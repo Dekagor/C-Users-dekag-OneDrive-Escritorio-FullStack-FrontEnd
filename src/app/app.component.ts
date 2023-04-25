@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio Personal';
-  sidebarStatus: boolean = false;
+  // sidebarStatus: boolean = false;
 }
