@@ -20,11 +20,13 @@ export class ExperienciaEditableComponent implements OnInit {
 
   OnCreate(): void {
     const mExperiencia = new Experiencia(this.nombreExperiencia, this.descripcionExperiencia);
-    this.sExperiencia.save(mExperiencia).subscribe(data=>{alert("Experiencia añadida");
+    this.sExperiencia.save(mExperiencia).subscribe(
+    { next: data=> {
+      alert("Experiencia añadida");
     this.router.navigate(['home']);
-    }, err => {alert("Fallo");
+    }, error: err => {alert("Fallo");
     this.router.navigate(['home']);
     }
-    )
+    })
   }
 }

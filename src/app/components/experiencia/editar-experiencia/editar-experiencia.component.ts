@@ -15,11 +15,14 @@ export class EditarExperienciaComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activateRouter.snapshot.params['id'];
-      this.sExperiencia.detail(id).subscribe(data => {
-      this.expLab = data;
-    }, err =>{
-      alert("Error al modificar experiencia");
-      this.router.navigate(['home']);
+      this.sExperiencia.detail(id).subscribe(
+        {
+          next: data => {
+            this.expLab = data;
+        }, error:err =>{
+          alert("Error al modificar experiencia");
+          this.router.navigate(['home']);
+    },
     })
   }
 
@@ -30,7 +33,7 @@ export class EditarExperienciaComponent implements OnInit {
         this.router.navigate(['home']);
       },
       error:
-        (      err): void => {
+        (err): void => {
         alert("Error al modificar experiencia");
         this.router.navigate(['home']);
       }
