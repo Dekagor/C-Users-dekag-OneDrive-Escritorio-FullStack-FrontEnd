@@ -21,6 +21,7 @@ import { LoginButtonComponent } from './components/login-button/login-button.com
 import { interceptorProvider } from './service/interceptor-service';
 import { ExperienciaEditableComponent } from './components/experiencia/experiencia-editable/experiencia-editable.component';
 import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia/editar-experiencia.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -46,10 +47,12 @@ import { EditarExperienciaComponent } from './components/experiencia/editar-expe
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
-    interceptorProvider
+    interceptorProvider,
+  
   ],
   bootstrap: [AppComponent]
 })

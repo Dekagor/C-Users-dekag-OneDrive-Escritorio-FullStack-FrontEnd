@@ -14,19 +14,20 @@ export class ExperienciaEditableComponent implements OnInit {
 
   constructor(private sExperiencia: ExperienciaService, private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
 
   }
 
-  OnCreate(): void {
+  OnCreate(): void{
     const mExperiencia = new Experiencia(this.nombreExperiencia, this.descripcionExperiencia);
     this.sExperiencia.save(mExperiencia).subscribe(
-    { next: data=> {
+    { next: data=>{
       alert("Experiencia añadida");
     this.router.navigate(['home']);
-    }, error: err => {alert("Fallo");
+    }, error: err =>{
+      alert("Fallo");
     this.router.navigate(['home']);
     }
-    })
+    });
   }
 }
