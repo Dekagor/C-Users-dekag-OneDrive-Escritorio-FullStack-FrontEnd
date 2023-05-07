@@ -9,8 +9,8 @@ import { ExperienciaService } from 'src/app/service/experiencia.service';
   styleUrls: ['./experiencia-editable.component.css']
 })
 export class ExperienciaEditableComponent implements OnInit {
-  nombreExperiencia: string = '';
-  descripcionExperiencia: string = '';
+  nombreExperiencia: string;
+  descripcionExperiencia: string;
 
   constructor(private sExperiencia: ExperienciaService, private router: Router) { }
 

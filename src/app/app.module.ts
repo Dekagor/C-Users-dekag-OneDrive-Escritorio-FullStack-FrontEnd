@@ -22,6 +22,10 @@ import { interceptorProvider } from './service/interceptor-service';
 import { ExperienciaEditableComponent } from './components/experiencia/experiencia-editable/experiencia-editable.component';
 import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia/editar-experiencia.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EducacionEditableComponent } from './components/educacion/educacion-editable/educacion-editable.component';
+import { EducacionNuevaComponent } from './components/educacion/educacion-nueva/educacion-nueva.component';
+
+
 
 @NgModule({
   declarations: [
@@ -39,7 +43,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     LoginButtonComponent,
     ExperienciaEditableComponent,
-    EditarExperienciaComponent
+    EditarExperienciaComponent,
+    EducacionNuevaComponent,
+    EducacionEditableComponent,
+
   ],
   imports: [
     BrowserModule,

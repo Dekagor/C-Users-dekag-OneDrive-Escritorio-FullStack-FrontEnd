@@ -4,7 +4,7 @@
         <img src="../../../assets/Img/Experiencia.jfif" class="img-fluid">
 
         <div class="col-lg-2">
-            <button type="button" class="exp btn btn-primary" routerLink="/nuevaExperiencia" *ngIf="isLogged">Experiencia</button>
+            <button type="button" class="exp btn btn-outline-secondary" routerLink="/nuevaExperiencia" *ngIf="isLogged">Experiencia</button>
         </div>
         </div>
 
@@ -18,8 +18,6 @@
                     <td *ngIf="isLogged"><button class="btn btn-danger" type="button" name="Borrar"><i class="fa-solid fa-trash" (click)="delete(Experiencia.id)"></i></button></td>
                 </tr>
             </table>
-
-
         </div>
     </div>
 </div>

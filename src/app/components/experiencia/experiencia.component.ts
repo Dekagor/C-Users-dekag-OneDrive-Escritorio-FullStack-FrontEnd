@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ExperienciaService } from 'src/app/service/experiencia.service';
+import { JsonService } from 'src/app/service/json-service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -10,11 +11,13 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ExperienciaComponent implements OnInit {
   mExperiencia: Experiencia[] = [];
-
-
-
-  constructor(private sExperiencia: ExperienciaService, private tokenService: TokenService) { }
   isLogged = false;
+  datos : any = {};
+
+
+
+  constructor(private sExperiencia: ExperienciaService, private tokenService: TokenService, private jsonService: JsonService) { }
+
 
   ngOnInit(): void {
       this.cargarExperiencia();

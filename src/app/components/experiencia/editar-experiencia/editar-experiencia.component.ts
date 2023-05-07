@@ -39,5 +39,6 @@ export class EditarExperienciaComponent implements OnInit {
       }
       }
     )
+    console.log(this.expLab);
   }
 }

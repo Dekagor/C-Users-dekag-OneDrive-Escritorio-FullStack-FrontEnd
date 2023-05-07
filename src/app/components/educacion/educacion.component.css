@@ -20,6 +20,13 @@
     justify-content: center;
 }
 
+.edc {
+    margin-top: 18px;
+}
+
+.table {
+    margin-top: 80px;
+}
 
 @media (max-width: 768px) {
     .container {
