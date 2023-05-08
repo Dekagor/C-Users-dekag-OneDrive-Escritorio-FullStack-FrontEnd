@@ -12,7 +12,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class ExperienciaComponent implements OnInit {
   mExperiencia: Experiencia[] = [];
   isLogged = false;
-  datos : any = {};
+  datos: any = {};
 
 
 

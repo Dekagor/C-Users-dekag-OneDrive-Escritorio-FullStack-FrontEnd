@@ -15,7 +15,7 @@
                     <td><h3>{{educacion.tituloE}}</h3></td>
                     <td>{{educacion.descripcionE}}</td>
                     <td>{{educacion.anioE}}</td>
-                    <td *ngIf="isLogged"><button class="btn btn-info" type="button" name="Editar" routerLink="/editarEducacion/{{educacion.id}}"><i class="fa-solid fa-pen"></i></button></td>
+                    <!-- <td *ngIf="isLogged"><button class="btn btn-info" type="button" name="Editar" routerLink="/editarEducacion/{{educacion.id}}"><i class="fa-solid fa-pen"></i></button></td> -->
                     <td *ngIf="isLogged"><button class="btn btn-danger" type="button" name="Borrar"><i class="fa-solid fa-trash" (click)="delete(educacion.id)"></i></button></td>
                 </tr>
             </table>
